@@ -1,0 +1,202 @@
+/* Base styles */
+body.retro-dark {
+  background-color: #000000;
+  font-family: 'VT323', monospace;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/* Card styles */
+.card {
+  background-color: #0a0a0a;
+  border: 2px solid #00ff00;
+  border-radius: 0;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.2) !important;
+}
+
+.card-header {
+  background-color: #000000;
+  border-bottom: 2px solid #00ff00;
+  padding: 1.5rem;
+}
+
+.creepy-title {
+  font-family: 'Creepster', cursive;
+  font-size: 3rem;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  letter-spacing: 2px;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Table styles */
+.table {
+  margin-bottom: 0;
+  color: #00ff00;
+  border-color: #00ff00;
+}
+
+.table thead th {
+  border-bottom: 2px solid #00ff00;
+  color: #00ff00;
+  font-size: 1.2rem;
+}
+
+.table td {
+  border-color: #00ff00;
+  padding: 1rem;
+}
+
+.address-cell {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Rank badges */
+.badge-rank {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 0;
+  font-family: 'VT323', monospace;
+}
+
+.rank-1 {
+  background-color: #ffd700;
+  color: #000;
+  text-shadow: none;
+}
+
+.rank-2 {
+  background-color: #c0c0c0;
+  color: #000;
+  text-shadow: none;
+}
+
+.rank-3 {
+  background-color: #cd7f32;
+  color: #000;
+  text-shadow: none;
+}
+
+/* Buttons and inputs */
+.retro-btn {
+  font-family: 'VT323', monospace;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border: 2px solid #00ff00 !important;
+  background-color: transparent !important;
+  color: #00ff00 !important;
+  text-shadow: 0 0 5px #00ff00;
+  transition: all 0.3s ease;
+}
+
+.retro-btn:hover {
+  background-color: #00ff00 !important;
+  color: #000000 !important;
+  text-shadow: none;
+  box-shadow: 0 0 15px #00ff00;
+}
+
+.retro-input {
+  background-color: #000000 !important;
+  border: 2px solid #00ff00 !important;
+  border-radius: 0 !important;
+  color: #00ff00 !important;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+}
+
+.retro-input::placeholder {
+  color: #00ff00;
+  opacity: 0.5;
+}
+
+/* Token info container */
+.token-info-container {
+  background-color: #0a0a0a;
+  border: 2px solid #00ff00;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.token-name {
+  font-size: 1.5rem;
+  color: #00ff00;
+  margin-bottom: 0.5rem;
+}
+
+.token-symbol, .token-decimals {
+  font-size: 1.1rem;
+  color: #00ff00;
+  opacity: 0.8;
+}
+
+.token-description {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #00ff00;
+  opacity: 0.9;
+}
+
+/* Alert styles */
+.retro-alert {
+  background-color: #0a0a0a !important;
+  border: 1px solid #00ff00 !important;
+  color: #00ff00 !important;
+  border-radius: 0;
+}
+
+/* Remove button */
+.btn-remove {
+  color: #ff0000;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+.btn-remove:hover {
+  color: #ff4444;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+/* Card footer */
+.card-footer {
+  background-color: #000000;
+  border-top: 2px solid #00ff00;
+}
+
+/* Retro text style */
+.retro-text {
+  font-family: 'VT323', monospace;
+  color: #00ff00;
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  }
+  to {
+    text-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00, 0 0 35px #00ff00;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table th, .table td {
+    padding: 0.5rem;
+  }
+  
+  .address-cell {
+    max-width: 120px;
+  }
+  
+  .creepy-title {
+    font-size: 2rem;
+  }
+} 

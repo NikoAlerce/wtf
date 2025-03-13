@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@taquito/taquito": "^21.0.3",
+    "bignumber.js": "^9.1.2"
+  }
+}
